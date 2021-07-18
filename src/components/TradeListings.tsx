@@ -17,8 +17,7 @@ export const TradeListings = ({ symbol, address, decimals }) => {
     return <div>{address} Token bal not found</div>
   }
   return (
-    <div>
-      Your Balance: {parseFloat(formatUnits(balance, decimals)).toPrecision(6)} {symbol}
+    <div>    
       {/*
         Simulate a number of offers from a list here. The amt for each offer is
         */}
