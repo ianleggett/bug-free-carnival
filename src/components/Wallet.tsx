@@ -28,6 +28,7 @@ export const Wallet = () => {
     activate,
     active,
     connector,
+    deactivate
   } = useWeb3React<Web3Provider>()
 
   // [
@@ -70,6 +71,7 @@ export const Wallet = () => {
 
   const onDisconnect = () => {     
     injectedConnector.deactivate();
+    deactivate();
   }
 
   const sym = TOKENS_BY_NETWORK[Networks.Kovan][0].symbol;
